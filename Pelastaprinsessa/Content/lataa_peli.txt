@@ -1,0 +1,5 @@
+elamat:5
+pisteet:0
+taso:1
+montakoTormata:0
+isammu:False

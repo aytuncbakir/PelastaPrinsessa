@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pelastaprinsessa", "Pelastaprinsessa\Pelastaprinsessa.csproj", "{31A80F7E-9174-4FD5-8382-721443D629E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{84E12EC2-980C-45F2-A87E-1CC0FCF29A0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31A80F7E-9174-4FD5-8382-721443D629E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A80F7E-9174-4FD5-8382-721443D629E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A80F7E-9174-4FD5-8382-721443D629E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A80F7E-9174-4FD5-8382-721443D629E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E1CC4BF7-94EF-4E9F-B5FF-116583FDEA92}
+	EndGlobalSection
+EndGlobal
