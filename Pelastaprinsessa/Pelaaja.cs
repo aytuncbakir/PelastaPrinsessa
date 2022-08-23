@@ -19,8 +19,9 @@ public class Pelaaja : PlatformCharacter
     private const double HYPPYVOIMA = 800;
     private static Pelaaja pelaaja = null;
     private static bool isAmmu;
-
-
+    
+    private static readonly object Instancelock = new object();
+    
     /// <summary>Pelaahan consructor</summary>
     /// <param name="width"> width</param>
     /// <param name="height"> height </param>
@@ -80,8 +81,14 @@ public class Pelaaja : PlatformCharacter
     /// <returns>pelaaja</returns>
     public static Pelaaja GetPelaaja()
     {
-        if(pelaaja == null)
-            pelaaja = new Pelaaja(AlkuArvot.RUUDUN_LEVEYS, AlkuArvot.RUUDUN_KORKEUS,AlkuArvot.tallennetutArvot[0], Isammu());
+        if (pelaaja == null)
+        {
+            lock (Instancelock)
+            {
+                if (pelaaja == null)
+                    pelaaja = new Pelaaja(AlkuArvot.RUUDUN_LEVEYS, AlkuArvot.RUUDUN_KORKEUS, AlkuArvot.tallennetutArvot[0], Isammu());
+            }
+        }
         return pelaaja;
     }
 
